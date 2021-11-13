@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,6 @@
   "homepage": "https://github.com/MatheusEli/natours#readme",
   "devDependencies": {
     "node-sass": "^6.0.1"
-  }
+  },
+  "dependencies": {}
 }
