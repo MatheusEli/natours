@@ -1,7 +1,14 @@
 @mixin clearfix {
-    &::after{
+    &::after {
         content: "";
         display: table;
         clear: both;
     }
+}
+
+@mixin center-absolute-elements {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

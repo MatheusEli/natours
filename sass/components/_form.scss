@@ -76,10 +76,7 @@
             width: 1.3rem;
             display: block;
             border-radius: 50%;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            @include center-absolute-elements;
             background-color: $color-primary;
             opacity: 0;
             transition: opacity .2s;
