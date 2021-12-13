@@ -5,9 +5,17 @@
     font-size: 1.4rem;
     color: $color-grey-light-1;
 
+    @include respond(tab-port){
+        padding: 8rem 0;
+    }
+
     &__logo-box{
         text-align: center;
         margin-bottom: 8rem;
+
+        @include respond(tab-port){
+            margin-bottom: 6rem;
+        }
     }
 
     &__logo{
@@ -19,12 +27,17 @@
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         display: inline-block;
+    
+        @include respond(tab-port){
+            width: 100%;
+            text-align: center;
+        }
     }
-
+    
     &__list{
         list-style: none;
     }
-
+    
     &__item{
         display: inline-block;
         
@@ -32,7 +45,7 @@
             margin-right: 1.5rem;
         }
     }
-
+    
     &__link{
         &:link,
         &:visited{
@@ -43,7 +56,7 @@
             display: inline-block;
             transition: all .2s;
         }
-
+        
         &:hover,
         &:active{
             color: $color-primary;
@@ -51,11 +64,16 @@
             transform: scale(1.3) rotate(5deg);
         }
     }
-
+    
     &__copyright{
         border-top: 1px solid $color-grey-dark;
         padding-top: 2rem;
         width: 80%;
         float: right;
+        
+        @include respond(tab-port){
+            width: 100%;
+            float: none;
+        }
     }
 }
