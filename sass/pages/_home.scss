@@ -11,7 +11,7 @@
 .section-features {
     padding: 20rem 0;
     background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
-        url("../img/nat-4.jpg");
+        url("../img/nat-4-small.jpg");
     background-size: cover;
 
     transform: skewY(-7deg);
@@ -23,6 +23,11 @@
 
     @include respond(tab-port) {
         padding: 10rem 0;
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+        background-image: linear-gradient(to right bottom, rgba($color-primary-light, 0.8), rgba($color-primary-dark, 0.8)),
+        url("../img/nat-4.jpg");
     }
 }
 
@@ -56,7 +61,7 @@
 
 .book {
     background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 50%, transparent 50%),
-        url("../../img/nat-10.jpg");
+        url("../../img/nat-10-small.jpg");
     background-size: 100%;
     border-radius: 3px;
     box-shadow: 0 1.5rem 4rem rgba($color-black, 0.2);
@@ -69,7 +74,7 @@
                 rgba($color-white, 0.9) 65%,
                 transparent 65%
             ),
-            url("../../img/nat-10.jpg");
+            url("../../img/nat-10-small.jpg");
             background-size: cover;
     }
 
@@ -79,7 +84,7 @@
                 rgba($color-white, 0.9) 0%,
                 rgba($color-white, 0.9) 100%
             ),
-            url("../../img/nat-10.jpg");
+            url("../../img/nat-10-small.jpg");
     }
     &__form {
         width: 50%;
@@ -92,5 +97,20 @@
         @include respond(tab-port){
             width: 100%;
         }
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 37.5em){
+        background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 100%),
+        url("../../img/nat-10.jpg");
+    }
+
+    @media (min-resolution: 192dpi) and (min-width: 75em){
+        background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 65%, transparent 65%),
+        url("../../img/nat-10.jpg");
+    }
+    
+    @media (min-width: 125em){
+        background-image: linear-gradient(105deg, rgba($color-white, 0.9) 0%, rgba($color-white, 0.9) 50%, transparent 50%),
+        url("../../img/nat-10.jpg");
     }
 }
